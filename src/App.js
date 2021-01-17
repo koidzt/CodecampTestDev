@@ -93,18 +93,33 @@ function App() {
 
   return (
     <div className="">
-      <div className="question1">
+      <div className="question1" style={{ padding: '5ex' }}>
         <h1>Question 1</h1>
+        <ul>
+          <h4>โจยท์ ดึงข้อมูลชุดตัวเลขจาก API : q1 แล้ว process ดังนี้</h4>
+          <li>เรียงลำดับ จากน้อยไปมาก</li>
+          <li>เอาตัวเลขเฉพาะ between 100 - 500 (รวมตัวเลข 100, 500ด้วย)</li>
+          <li>เอาตัวเลขเฉพาะ หารด้วย แม่3 หรือ แม่5 ลงตัว</li>
+          <li>แสดงเฉพาะเลขที่ unique (ไม่ต้องแสดงเลขซ้ำ เช่น 9 สี่ตัว ให้แสดงแค่ 9ตัวเดียว)</li>
+        </ul>
         <h3>Answer</h3>
-        <div style={{ width: '500px' }}>{JSON.stringify(answer1)}</div>
+        <span style={{ width: '500px' }}>{JSON.stringify(answer1)}</span>
       </div>
-      <div className="question2">
+      <div className="question2" style={{ padding: '5ex' }}>
         <h1>Question 2</h1>
+        <ul>
+          <h4>โจยท์ ดึงข้อมูลธุรกรรมการขาย API : q2 แล้ว process ดังนี้</h4>
+          <li>รวมยอดขายของแต่ละภาค location</li>
+        </ul>
         <h3>Answer</h3>
         <div>{JSON.stringify(answer2)}</div>
       </div>
-      <div className="question3">
+      <div className="question3" style={{ padding: '5ex' }}>
         <h1>Question 3</h1>
+        <ul>
+          <h4>โจยท์ ดึงข้อมูลธุรกรรมการขาย API : q3 แล้ว process ดังนี้ (ข้อมูลโครงสร้างเดียวกับข้อ2)</h4>
+          <li>รวมยอดขายของสมาชิกแต่ละคนโดยชื่อ member.name</li>
+        </ul>
         <h3>Answer</h3>
         <div>{JSON.stringify(answer3)}</div>
       </div>
